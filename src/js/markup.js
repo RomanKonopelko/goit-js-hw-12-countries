@@ -3,13 +3,13 @@ import fullCountryInfoMarkup from "../templates/fullCountryInfo.hbs";
 import notifications from "./notification.js";
 import refs from "./refs.js";
 
-const { succsessNotification, presizeRequestNotification } = notifications;
+const { succsessNotification, preciseRequestNotification } = notifications;
 
 const { countryList } = refs;
 
 export default function fetchCountriesMarkup(data) {
   let markup;
-  if (data.length < 10) {
+  if (data.length >= 2 && data.length <= 10) {
     markup = countriesListMarkup(data);
   }
   if (data.length === 1) {
@@ -17,7 +17,7 @@ export default function fetchCountriesMarkup(data) {
     succsessNotification();
   }
   if (data.length > 10) {
-    presizeRequestNotification();
+    preciseRequestNotification();
     return;
   }
   return countryList.insertAdjacentHTML("afterbegin", markup);

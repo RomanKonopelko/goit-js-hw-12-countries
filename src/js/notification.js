@@ -29,7 +29,7 @@ function errorNotification() {
   error("Страна из вселенной Игры Престолов неподходит:)");
 }
 
-function presizeRequestNotification() {
+function preciseRequestNotification() {
   info("А поточнее?");
 }
 
@@ -39,7 +39,7 @@ function succsessNotification() {
 
 export default {
   succsessNotification,
-  presizeRequestNotification,
+  preciseRequestNotification,
   errorNotification,
   noticeNotification,
   emptyNotification,
