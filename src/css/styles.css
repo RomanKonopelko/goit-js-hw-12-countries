@@ -1,0 +1,66 @@
+*::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url(https://caan.b-cdn.net/wp-content/uploads/2020/04/negative-space-globe-world-map-nastyasensei-sens-scaled.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.searchWrap {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 50px 0;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 2px 1px 1em;
+
+  width: calc(70%);
+  min-height: 50vh;
+
+  opacity: 0.8;
+  background-color: beige;
+}
+
+.countryList {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.mainContainer {
+  width: 80%;
+  margin-right: 20px;
+}
+
+.languages {
+  padding: 0;
+  list-style: circle;
+}
+
+.languages li {
+  margin-left: 15px;
+}
+
+.info {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.countryName {
+  text-align: center;
+
+  font-size: 32px;
+  color: brown;
+}
