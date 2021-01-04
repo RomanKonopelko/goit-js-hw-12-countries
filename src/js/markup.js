@@ -9,10 +9,10 @@ const { countryList } = refs;
 
 export default function fetchCountriesMarkup(data) {
   let markup;
-  if (data.length >= 2) {
+  if (data.length < 10) {
     markup = countriesListMarkup(data);
   }
-  if (data.length < 2 && data.length !== 0) {
+  if (data.length === 1) {
     markup = fullCountryInfoMarkup(data);
     succsessNotification();
   }
